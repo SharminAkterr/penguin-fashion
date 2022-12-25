@@ -6,24 +6,250 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin</title>
+    <!-- google font start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- google font end -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.46.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
+                        sectionColor: '#FFFBF0',
+                        primaryColor: '#363958',
+                        secondaryColor: '#FABE4C',
+                        PrimaryLinearlime: '#A4BC46',
+                        SecondaryLinearlime: '#85A019',
+                        imageColor: '#F1F1F1',
+                    },
+                    fontFamily: {
+                        bebas: ['Bebas Neue', "cursive"],
+                        montserrat: ['Montserrat', "sans-serif"],
+                        roboto: ['Roboto', "sans-serif"],
+                    },
+                },
+            },
+        };
     </script>
 </head>
 
 <body>
     <header>
-        <h1 class="">hi this is me</h1>
+        <section class="bg-sectionColor pb-32">
+            <nav
+                class="container mx-auto flex flex-col md:flex-row items-center lg:gap-x-96 md:gap-x-6 lg:pl-32 font-roboto py-5">
+                <div class="bg-[url('./images/logo.png')] bg-no-repeat md:h-10 md:w-80 w-64 h-8 bg-cover md:mb-3">
+                </div>
+                <ul class="flex flex-col md:flex-row gap-y-3 p-2 md:gap-x-14">
+                    <li><a class="" href="">Home</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </nav>
+            <!-- banner start  -->
+            <div class="container mx-auto flex flex-col md:flex-row lg:pl-32 sm:items-center font-roboto mt-8">
+                <div class="space-y-4 pl-5 sm:pl-0">
+                    <h1 class="text-primaryColor text-5xl sm:text-7xl  font-bebas"><span class="text-secondaryColor">Be
+                            the
+                            Penguins</span>
+                        <br>of Winter
+                    </h1>
+                    <p class="md:w-3/4 lg:w-[357px] ">Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry.</p>
+                    <button
+                        class="bg-gradient-to-r from-PrimaryLinearlime to-SecondaryLinearlime px-7 py-4 text-white rounded-xl ">
+                        <a class="flex items-center gap-2" href="">
+                            <img class="w-5" src="./icons/shopping-cart 1.png" alt="" srcset=""> BUY
+                            NOW
+                        </a>
+                    </button>
+                </div>
+                <div><img class="md:pl-5 lg:pl-40" src="./images/model.png" alt="" srcset=""></div>
+            </div>
+            <!-- banner end  -->
+        </section>
     </header>
+    <main>
+        <!-- women jacket start from here  -->
+        <section class="container mx-auto mt-12 mb-24 text-primaryColor">
+            <h1 class="text-5xl font-bebas pl-5 sm:pl-10 md:pl-0 lg:pl-32">Women Jacket</h1>
+            <!--All jackets -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-5 sm:px-10 md:px-0 lg:px-32">
+                <!----------- Jacket 1 --------->
+                <div class="font-roboto p-4 shadow-lg rounded-2xl">
+                    <div class="bg-imageColor p-5 rounded-2xl mb-7">
+                        <img src="./images/jacket-1.png" alt="" srcset="">
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3">Yellow Coat Jacket </h2>
+                    <p class="mb-3">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-4xl font-extrabold text-secondaryColor">$234</h2>
+                        <button
+                            class="bg-gradient-to-r from-PrimaryLinearlime to-SecondaryLinearlime px-7 py-4 text-white rounded-xl ">
+                            <a class="flex items-center gap-2" href="">
+                                <img class="w-5" src="./icons/shopping-cart 1.png" alt="" srcset=""> BUY
+                                NOW
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <!----------- Jacket 2 --------->
+                <div class="font-roboto p-4 shadow-lg rounded-2xl">
+                    <div class="bg-imageColor p-5 rounded-2xl mb-7">
+                        <img src="./images/jacket-2.png" alt="" srcset="">
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3">Ladies Jacket </h2>
+                    <p class="mb-3">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-4xl font-extrabold text-secondaryColor">$234</h2>
+                        <button
+                            class="bg-gradient-to-r from-PrimaryLinearlime to-SecondaryLinearlime px-7 py-4 text-white rounded-xl ">
+                            <a class="flex items-center gap-2" href="">
+                                <img class="w-5" src="./icons/shopping-cart 1.png" alt="" srcset=""> BUY
+                                NOW
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <!----------- Jacket 3 --------->
+                <div class="font-roboto p-4 shadow-lg rounded-2xl">
+                    <div class="bg-imageColor p-5 rounded-2xl mb-7">
+                        <img src="./images/jacket-3.png" alt="" srcset="">
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3">Woman Leather Jacket</h2>
+                    <p class="mb-3">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-4xl font-extrabold text-secondaryColor">$234</h2>
+                        <button
+                            class="bg-gradient-to-r from-PrimaryLinearlime to-SecondaryLinearlime px-7 py-4 text-white rounded-xl ">
+                            <a class="flex items-center gap-2" href="">
+                                <img class="w-5" src="./icons/shopping-cart 1.png" alt="" srcset=""> BUY
+                                NOW
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Man jacket start from here  -->
+        <section class="container mx-auto mt-12 mb-24 text-primaryColor">
+            <h1 class="text-5xl font-bebas pl-5 sm:pl-10 md:pl-0 lg:pl-32">Man Jacket</h1>
+            <!--All jackets -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-5 sm:px-10 md:px-0 lg:px-32">
+                <!----------- Jacket 1 --------->
+                <div class="font-roboto p-4 shadow-lg rounded-2xl">
+                    <div class="bg-imageColor p-5 rounded-2xl mb-7">
+                        <img src="./images/jacket-4.png" alt="" srcset="">
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3">Snowboard Jacket Mens</h2>
+                    <p class="mb-3">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-4xl font-extrabold text-secondaryColor">$234</h2>
+                        <button
+                            class="bg-gradient-to-r from-PrimaryLinearlime to-SecondaryLinearlime px-7 py-4 text-white rounded-xl ">
+                            <a class="flex items-center gap-2" href="">
+                                <img class="w-5" src="./icons/shopping-cart 1.png" alt="" srcset=""> BUY
+                                NOW
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <!----------- Jacket 2 --------->
+                <div class="font-roboto p-4 shadow-lg rounded-2xl">
+                    <div class="bg-imageColor p-5 rounded-2xl mb-7">
+                        <img src="./images/jacket-5.png" alt="" srcset="">
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3">Man Leather Jackets</h2>
+                    <p class="mb-3">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-4xl font-extrabold text-secondaryColor">$234</h2>
+                        <button
+                            class="bg-gradient-to-r from-PrimaryLinearlime to-SecondaryLinearlime px-7 py-4 text-white rounded-xl ">
+                            <a class="flex items-center gap-2" href="">
+                                <img class="w-5" src="./icons/shopping-cart 1.png" alt="" srcset=""> BUY
+                                NOW
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <!----------- Jacket 3 --------->
+                <div class="font-roboto p-4 shadow-lg rounded-2xl">
+                    <div class="bg-imageColor p-5 rounded-2xl mb-7">
+                        <img src="./images/jacket-6.png" alt="" srcset="">
+                    </div>
+                    <h2 class="text-2xl font-bold mb-3">Man Casual Jackets</h2>
+                    <p class="mb-3">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex items-center justify-between">
+                        <h2 class="text-4xl font-extrabold text-secondaryColor">$234</h2>
+                        <button
+                            class="bg-gradient-to-r from-PrimaryLinearlime to-SecondaryLinearlime px-7 py-4 text-white rounded-xl ">
+                            <a class="flex items-center gap-2" href="">
+                                <img class="w-5" src="./icons/shopping-cart 1.png" alt="" srcset=""> BUY
+                                NOW
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- our benifits start from here  -->
+        <section class="container mx-auto mb-48">
+            <div
+                class="grid grid-cols-1 lg:grid-cols-2 items-center gap-y-9 lg:gap-y-4 gap-x-20 px-5 sm:px-10 md:px-0 lg:px-32">
+                <!-- Column-1 start  -->
+                <div
+                    class="flex items-center gap-9 text-primaryColor font-roboto shadow-lg p-5 rounded-2xl order-2 lg:order-1">
+                    <div>
+                        <img class="w-20" src="./icons/image 12.png" alt="" srcset="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold">Find the Perfect Fit</h3>
+                        <p>Everybody is different, which is why we
+                            offer styles for every body.</p>
+                    </div>
+                </div>
+                <!-- Column-2 start  -->
+                <div class="row-span-3 order-1 lg:order-2">
+                    <img src="./images/shopping.png" alt="" srcset="">
+                </div>
+                <!-- Column-3 start  -->
+                <div class="flex items-center gap-9 text-primaryColor font-roboto shadow-lg p-5 rounded-2xl order-3">
+                    <div>
+                        <img class="w-20" src="./icons/image 13.png" alt="" srcset="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold">Free Exchanges</h3>
+                        <p>Everybody is different, which is why we
+                            offer styles for every body.</p>
+                    </div>
+                </div>
+                <!-- Column-4 start  -->
+                <div class="flex items-center gap-9 text-primaryColor font-roboto shadow-lg p-5 rounded-2xl order-4">
+                    <div>
+                        <img class="w-20" src="./icons/image 14.png" alt="" srcset="">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold">Contact Our Seller
+                        </h3>
+                        <p>Everybody is different, which is why we
+                            offer styles for every body.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
